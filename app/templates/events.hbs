@@ -1,0 +1,6 @@
+<ul>
+  {{#each event in model}}
+    <li>{{#link-to "events.show" event}}{{event.description}}{{/link-to}}</a></li>
+  {{/each}}
+</ul>
+{{outlet}}
